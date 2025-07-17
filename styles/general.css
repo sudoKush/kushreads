@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+  --clr-white: #FFFFFF;
+  --clr-rose-300: #FDA4AF;
+  --clr-rose-500: #F43F5E;
+  --clr-rose-600: #E11D48;
+  --clr-rose-700: #BE123C;
+  --clr-gray-200: #E4E4E7;
+  --clr-gray-900: #18181B;
+  --clr-blue-gray-50: #F8FAFC;
+  --clr-purple-600: #9333EA;
+  --clr-purple-700: #7E22CE;
+  --clr-blue-600: #2563EB;
+  --clr-emerald-500: #10B981;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behaviour: smooth;
+}
+
+::selection {
+  color: var(--clr-white); background-color: var(--clr-rose-500);
+}
+
+
