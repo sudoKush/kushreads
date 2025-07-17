@@ -1,11 +1,12 @@
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 .header__name {
   font-family: lora;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: var(--clr-gray-700);
+  margin: 0; padding: 0;
 }
