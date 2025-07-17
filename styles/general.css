@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --clr-white: #FFFFFF;
@@ -7,6 +8,7 @@
   --clr-rose-600: #E11D48;
   --clr-rose-700: #BE123C;
   --clr-gray-200: #E4E4E7;
+  --clr-gray-400: #A1A1AA;
   --clr-gray-600: #52525B;
   --clr-gray-700: #3F3F46;
   --clr-gray-900: #18181B;
@@ -23,15 +25,18 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behaviour: smooth;
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
 hr {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 ::selection {
-  color: var(--clr-white); background-color: var(--clr-rose-300);
+  color: var(--clr-white);
+  background-color: var(--clr-rose-300);
 }
 
