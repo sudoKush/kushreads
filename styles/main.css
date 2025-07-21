@@ -1,0 +1,9 @@
+.currently-reading-section {
+  display: flex;
+  justify-content: center;
+}
+
+.currently-reading-section__image {
+  width: 16rem;
+  height: 24rem;
+}
