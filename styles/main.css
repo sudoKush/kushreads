@@ -1,9 +1,23 @@
 .currently-reading-section {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 16rem;
 }
 
-.currently-reading-section__image {
+.currently-reading-section__book-image {
   width: 16rem;
-  height: 24rem;
+  height: 26rem;
+}
+
+.currently-reading-section__book-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.book-title {
+  font-family: 'lora';
+  font-size: 2.4rem;
 }
