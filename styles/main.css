@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16rem;
+  gap: 11rem;
 }
 
 .currently-reading-section__book-image {
