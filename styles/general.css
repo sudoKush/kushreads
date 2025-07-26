@@ -26,9 +26,13 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
   scroll-behavior: smooth;
   height: 100%;
+}
+
+body {
+  padding-top: 14rem;
 }
 
 hr {
