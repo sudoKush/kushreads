@@ -1,9 +1,13 @@
 .header {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  background-color: var(--clr-white);
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
   height: 10rem;
-  
 }
 
 .header__container {
@@ -15,10 +19,6 @@
 }
 
 .header__logo {
-  position: relative;
-  top: 0rem;
-  left: -55rem;
-  right: 0rem;
   width: 5rem; height: 5rem;
 }
 
@@ -26,7 +26,7 @@
   font-family: 'lora';
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--clr-gray-600);
+  color: var(--clr-gray-700);
 }
 
 .navbar-container {
