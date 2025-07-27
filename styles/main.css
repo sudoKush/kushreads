@@ -25,7 +25,11 @@
 .currently-reading-section__book-image {
   width: 16rem;
   height: 26rem;
-  border-radius: 0.2rem;
+  transition: all 0.2s;
+}
+
+.currently-reading-section__book-image:hover {
+  box-shadow: 0.1rem 0rem 1rem rgb(0, 0, 0, 0.080);
 }
 
 .currently-reading-section__book-rating {
