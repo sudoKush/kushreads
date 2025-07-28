@@ -111,6 +111,7 @@
   border-bottom-left-radius: 4rem;
   border-bottom-right-radius: 1rem;
   padding: 3rem 4rem;
+  background-color: var(--clr-blue-gray-50);
 } 
 
 .quote-mark {
