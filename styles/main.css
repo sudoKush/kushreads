@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: center;
   gap: 11rem; 
+  padding: 0 2rem;
 }
 
 .currently-reading-section__book-image {
@@ -82,3 +83,42 @@
   color: var(--clr-gray-700);
 }
 
+.currently-reading-section__book-quotes {
+  display: flex;
+  flex-flow: wrap row; 
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  font-family: 'lobster';
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0 2rem;
+}
+
+.quote-1-container, .quote-2-container, .quote-3-container, .quote-4-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 28rem;
+  height: 20rem;
+  max-width: 30rem;
+  border: 0.1rem solid var(--clr-blue-gray-300);
+  border-top-right-radius: 4rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 1rem;
+  padding: 3rem 4rem;
+} 
+
+.quote-mark {
+  position: absolute;
+  top: 3.5rem;
+  left: 3.5rem;
+  z-index: 100;
+  width: 1rem;
+  height: 1rem;
+  user-select: none;
+}
