@@ -64,7 +64,7 @@
 .book-review-oneline {
   font-family: var(--font-family-lora);
   font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-med);
+  font-weight: var(--font-weight-medium);
   color: var(--clr-gray-700);
 }
 
