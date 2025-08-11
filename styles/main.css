@@ -1,5 +1,8 @@
 .main-section > section {
+  display: flex;
+  justify-content: center;
   margin-bottom: 5rem;
+  
 }
 
 .currently-reading-section {
@@ -10,7 +13,7 @@
   gap: 3rem;
 }
 
-.currently-reading-section__title > h2 {
+.main-section > section > div > h2 {
   font-family: var(--font-family-poiret-one);
   font-size: var(--font-size-2xlg);
   font-weight: var(--font-weight-semi-bold);
@@ -23,7 +26,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 11rem; 
+  gap: 3rem; 
   padding: 0 2rem;
 }
 
@@ -34,7 +37,7 @@
 }
 
 .currently-reading-section__book-image:hover {
-  box-shadow: 0.1rem 0rem 1rem rgb(0, 0, 0, 0.080);
+  box-shadow: 0.2rem -0.2rem 0.5rem rgb(0, 0, 0, 0.3);
 }
 
 .currently-reading-section__book-rating {
@@ -128,3 +131,30 @@
   height: 1rem;
   user-select: none;
 }
+
+.favourites-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.favourites-section__books-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  gap: 2rem;
+}
+
+.favourites-section__book-image {
+  width: 10rem;
+  height: 16rem;
+  transition: all 0.3s;
+}
+
+.favourites-section__book-image:hover {
+  box-shadow: 0.2rem -0.2rem 0.5rem rgb(0, 0, 0, 0.3);
+}
+
