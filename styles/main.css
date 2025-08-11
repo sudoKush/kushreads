@@ -15,7 +15,7 @@
 
 .main-section > section > div > h2 {
   font-family: var(--font-family-poiret-one);
-  font-size: var(--font-size-2xlg);
+  font-size: var(--font-size-extra-large);
   font-weight: var(--font-weight-semi-bold);
   text-decoration: underline;
   color: var(--clr-gray-700);
@@ -37,13 +37,13 @@
 }
 
 .currently-reading-section__book-image:hover {
-  box-shadow: 0.2rem -0.2rem 0.5rem rgb(0, 0, 0, 0.3);
+  box-shadow: 0.1rem -0.1rem 0.3rem rgba(148, 163, 184, 0.3);
 }
 
 .currently-reading-section__book-rating {
   font-family: var(--font-family-poppins);
   font-weight: var(--font-weight-light);
-  font-size: var(--font-size-sm); 
+  font-size: var(--font-size-medium); 
 }
 
 .currently-reading-section__book-info-container {
@@ -55,7 +55,7 @@
 
 .book-title {
   font-family: var(--font-family-lora);
-  font-size: var(--font-size-xlg);
+  font-size: var(--font-size-extra-large);
   font-weight: var(--font-weight-semi-bold);
   color: var(--clr-gray-700);
 
@@ -63,21 +63,21 @@
 
 .book-author {
   font-family: var(--font-family-poppins);
-  font-size: var(--font-size-med);
+  font-size: var(--font-size-medium);
   font-weight: var(--font-weight-light);
   font-style: var(--font-style-italic);
 }
 
 .book-review-oneline {
   font-family: var(--font-family-lora);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-large);
   font-weight: var(--font-weight-medium);
   color: var(--clr-gray-700);
 }
 
 .book-review-paragraph {
   font-family: var(--font-family-poppins);
-  font-size: var(--font-size-med);
+  font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
   color: var(--clr-gray-700);
   line-height: 2.1rem;
@@ -85,7 +85,7 @@
 
 .book-review-spoilers {
   font-family: var(--font-family-roboto-condensed);
-  font-size: var(--font-size-med);
+  font-size: var(--font-size-medium);
   font-weight: var(--font-weight-semi-bold);
   color: var(--clr-gray-700);
 }
@@ -97,7 +97,7 @@
   align-items: center;
   gap: 5rem;
   font-family: var(--font-family-lora);
-  font-size: var(--font-size-med);
+  font-size: var(--font-size-medium);
   font-weight: var(--font-weight-thin);
   padding: 0 2rem;
 }
@@ -144,17 +144,74 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem 0 1rem;
   gap: 2rem;
+  padding: 1rem;
+}
+
+.favourites-section__book-details {
+  display: flex;
+  flex-flow: row wrap;
+  border: solid var(--clr-blue-gray-300);
+  border-width: 0.210rem;
+  border-radius: 0.5rem;
+  background-color: rgba(248, 250, 252, 0.0);
+  box-shadow: 0rem 0rem 0rem rgba(148, 163, 184, 0.0);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.favourites-section__book-details:hover {
+  background-color: rgba(248, 250, 252, 0.7);
+  box-shadow: 0.1rem -0.1rem 0.2rem rgba(148, 163, 184, 0.3);
+}
+
+.favourites-section__book-details > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-gray-600);
+  text-decoration: none;
+  padding: 0.5rem;
+  width: 23rem;
+  gap: 1rem;
+}
+
+.favourites-section__book-details > a > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.favourites-section__book-details > a > div:nth-child(1) {
+  gap: 0.5rem;
+}
+
+.favourites-section__book-details > a > div:nth-child(2) {
+  gap: 1rem;
 }
 
 .favourites-section__book-image {
   width: 10rem;
   height: 16rem;
-  transition: all 0.3s;
+  border-radius: 0.5rem;
 }
 
-.favourites-section__book-image:hover {
-  box-shadow: 0.2rem -0.2rem 0.5rem rgb(0, 0, 0, 0.3);
+.favourites-section__book-rating {
+  font-family: var(--font-family-poppins);
 }
 
+.favourites-section__book-title {
+  font-family: var(--font-family-lora);
+  font-size: calc(var(--font-size-small) + 0.1rem);
+  font-weight: var(--font-weight-medium);
+}
+
+.favourites-section__book-author {
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-extra-small);
+  font-weight: var(--font-weight-light);
+  font-style: var(--font-style-italic);
+}
+
+.favourites-section__book-review-oneline {
+  font-family: var(--font-family-lora);
+}
