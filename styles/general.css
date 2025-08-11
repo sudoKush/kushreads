@@ -37,25 +37,25 @@
   --font-family-poiret-one: 'poiret one';
 
   /* font sizes */
-  --font-size-2xsm: 0.6rem;
-  --font-size-xsm: 0.8rem;
-  --font-size-sm: 1rem;
-  --font-size-med: 1.2rem;
-  --font-size-xmed: 1.5rem;
-  --font-size-lg: 1.8rem;
-  --font-size-xlg: 2.1rem;
-  --font-size-2xlg: 2.5rem;
-  --font-size-3xlg: 3.5rem;
+  --font-size-extra-extra-small: 0.6rem;
+  --font-size-extra-small: 0.8rem;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.2rem;
+  --font-size-extra-medium: 1.5rem;
+  --font-size-large: 1.8rem;
+  --font-size-extra-large: 2.1rem;
+  --font-size-extra-extra-large: 2.5rem;
+  --font-size-extra-extra-extra-large: 3.5rem;
 
   /* font weights */ 
   --font-weight-thin: 100;
-  --font-weight-xlight: 200;
+  --font-weight-extra-light: 200;
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;
   --font-weight-bold: 800;
-  --font-weight-xbold: 800;
+  --font-weight-extra-bold: 800;
 
   /* font styles */ 
   --font-style-italic: italic;
