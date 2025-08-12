@@ -33,6 +33,7 @@
 .currently-reading-section__book-image {
   width: 16rem;
   height: 26rem;
+  border-radius: 0.5rem;
   transition: all 0.2s;
 }
 
