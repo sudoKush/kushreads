@@ -58,14 +58,13 @@
   font-family: var(--font-family-lora);
   font-size: var(--font-size-extra-large);
   font-weight: var(--font-weight-semi-bold);
-  color: var(--clr-gray-700);
-
+  color: var(--clr-gray-600);
 }
 
 .book-author {
   font-family: var(--font-family-poppins);
   font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-extra-light);
   font-style: var(--font-style-italic);
 }
 
@@ -79,7 +78,7 @@
 .book-review-paragraph {
   font-family: var(--font-family-poppins);
   font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-light);
   color: var(--clr-gray-700);
   line-height: 2.1rem;
 }
@@ -87,7 +86,7 @@
 .book-review-spoilers {
   font-family: var(--font-family-roboto-condensed);
   font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-semi-bold);
+  font-weight: var(--font-weight-medium);
   color: var(--clr-gray-700);
 }
 
@@ -130,7 +129,7 @@
   z-index: 100;
   width: 1rem;
   height: 1rem;
-  user-select: none;
+  pointer-events: none;
 }
 
 .favourites-section {
@@ -198,6 +197,7 @@
 
 .favourites-section__book-rating {
   font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-light);
 }
 
 .favourites-section__book-title {
@@ -215,4 +215,140 @@
 
 .favourites-section__book-review-oneline {
   font-family: var(--font-family-lora);
+}
+
+.already-read-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.already-read-section__book-details > a {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  text-decoration: none;
+  border: solid var(--clr-blue-gray-300);
+  border-width: 0.210rem;
+  border-radius: 0.5rem;
+  background-color: rgba(248, 250, 252, 0.0);
+  box-shadow: 0rem 0rem 0rem rgba(148, 163, 184, 0.0);
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 0.7rem;
+}
+
+.already-read-section__book-details > a:hover {
+  box-shadow: 0.1rem -0.1rem 0.2rem rgba(148, 163, 184, 0.3);
+  background-color: rgba(248, 250, 252, 0.7);
+
+}
+
+.already-read-section__book-image {
+  width: 8rem;
+  height: 12rem;
+  border-radius: 0.5rem;
+}
+
+.already-read-section__book-title {
+  font-family: var(--font-family-lora);
+  font-size: calc(var(--font-size-small) + 0.1rem);
+  font-weight: var(--font-weight-medium);
+  color: var(--clr-gray-600);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.already-read-section__book-author {
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-extra-small);
+  font-weight: var(--font-weight-light);
+  font-style: var(--font-style-italic);
+  color: var(--clr-gray-600);
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  overflow: hidden;
+}
+
+.already-read-section__book-rating {
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-extra-small);
+  font-weight: var(--font-weight-light);
+  color: var(--clr-gray-600);
+}
+
+.already-read-section__book-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.want-to-read-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.want-to-read-section__books-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 84rem;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.want-to-read-section__book-details > a {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  text-decoration: none;
+  border: solid var(--clr-blue-gray-300);
+  border-width: 0.210rem;
+  border-radius: 0.5rem;
+  background-color: rgba(248, 250, 252, 0.0);
+  box-shadow: 0rem 0rem 0rem rgba(148, 163, 184, 0.0);
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 0.7rem;
+}
+
+.want-to-read-section__book-details > a:hover {
+  box-shadow: 0.1rem -0.1rem 0.2rem rgba(148, 163, 184, 0.3);
+  background-color: rgba(248, 250, 252, 0.7);
+
+}
+
+.want-to-read-section__book-image {
+  width: 8rem;
+  height: 12rem;
+  border-radius: 0.5rem;
+}
+
+.want-to-read-section__book-title {
+  font-family: var(--font-family-lora);
+  font-size: calc(var(--font-size-small) + 0.1rem);
+  font-weight: var(--font-weight-medium);
+  color: var(--clr-gray-600);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.want-to-read-section__book-author {
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-extra-small);
+  font-weight: var(--font-weight-light);
+  font-style: var(--font-style-italic);
+  color: var(--clr-gray-600);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
