@@ -24,7 +24,8 @@
   position: absolute;
   top: 0.5rem;
   left: 1rem;
-  width: 5rem; height: 5rem;
+  width: 5rem;
+  height: 5rem;
   filter: drop-shadow(0rem 0.3rem 0.3rem rgba(148, 163, 184, 0.3));
   pointer-events: none;
 }
@@ -34,6 +35,7 @@
   font-size: var(--font-size-extra-extra-large);
   font-weight: var(--font-weight-extra-bold);
   color: var(--clr-gray-700);
+  white-space: nowrap;
 }
 
 .navbar {
