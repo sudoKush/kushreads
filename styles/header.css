@@ -32,7 +32,7 @@
 .header__title {
   font-family: var(--font-family-abril-fatface);
   font-size: var(--font-size-extra-extra-large);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-extra-bold);
   color: var(--clr-gray-700);
 }
 
