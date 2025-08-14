@@ -49,7 +49,7 @@
 
 .currently-reading-section__book-info-container {
   display: flex;
-  flex-flow: wrap column; 
+  flex-flow: column wrap; 
   gap: 1rem;
   max-width: 38rem;
 }
@@ -92,7 +92,7 @@
 
 .currently-reading-section__book-quotes {
   display: flex;
-  flex-flow: wrap row; 
+  flex-flow: row wrap; 
   justify-content: center;
   align-items: center;
   gap: 5rem;
@@ -161,8 +161,9 @@
 }
 
 .favourites-section__book-details:hover {
+  transform: translateY(-0.5rem);
   background-color: rgba(248, 250, 252, 0.7);
-  box-shadow: 0.1rem -0.1rem 0.2rem rgba(148, 163, 184, 0.3);
+  filter: drop-shadow(0.1rem -0.1rem 0.2rem rgba(148, 163, 184, 0.3));
 }
 
 .favourites-section__book-details > a {
@@ -217,41 +218,47 @@
   font-family: var(--font-family-lora);
 }
 
-.already-read-section {
+.have-read-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
 }
 
-.already-read-section__book-details > a {
+.have-read-section__book-details {
+  position: relative;
+  transition: all 0.2s;
+}
+
+.have-read-section__book-details > a {
   display: flex;
   flex-direction: column;
-  width: 10rem;
+  width: 10.35rem;
   text-decoration: none;
   border: solid var(--clr-blue-gray-300);
   border-width: 0.210rem;
   border-radius: 0.5rem;
   background-color: rgba(248, 250, 252, 0.0);
   box-shadow: 0rem 0rem 0rem rgba(148, 163, 184, 0.0);
-  transition: all 0.2s;
   cursor: pointer;
   padding: 0.7rem;
 }
 
-.already-read-section__book-details > a:hover {
-  box-shadow: 0.1rem -0.1rem 0.2rem rgba(148, 163, 184, 0.3);
+.have-read-section__book-details:hover {
+  transform: translateY(-0.5rem);
   background-color: rgba(248, 250, 252, 0.7);
+  filter: drop-shadow(0.1rem -0.1rem 0.2rem rgba(148, 163, 184, 0.3));
 
 }
 
-.already-read-section__book-image {
+.have-read-section__book-image {
   width: 8rem;
   height: 12rem;
   border-radius: 0.5rem;
+  align-self: center;
 }
 
-.already-read-section__book-title {
+.have-read-section__book-title {
   font-family: var(--font-family-lora);
   font-size: calc(var(--font-size-small) + 0.1rem);
   font-weight: var(--font-weight-medium);
@@ -261,7 +268,7 @@
   overflow: hidden;
 }
 
-.already-read-section__book-author {
+.have-read-section__book-author {
   font-family: var(--font-family-poppins);
   font-size: var(--font-size-extra-small);
   font-weight: var(--font-weight-light);
@@ -272,14 +279,14 @@
   overflow: hidden;
 }
 
-.already-read-section__book-rating {
+.have-read-section__book-rating {
   font-family: var(--font-family-poppins);
   font-size: var(--font-size-extra-small);
   font-weight: var(--font-weight-light);
   color: var(--clr-gray-600);
 }
 
-.already-read-section__book-container {
+.have-read-section__book-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -305,6 +312,12 @@
   gap: 2rem;
 }
 
+
+.want-to-read-section__book-details {
+  position: relative;
+  transition: all 0.2s;
+}
+
 .want-to-read-section__book-details > a {
   display: flex;
   flex-direction: column;
@@ -315,14 +328,14 @@
   border-radius: 0.5rem;
   background-color: rgba(248, 250, 252, 0.0);
   box-shadow: 0rem 0rem 0rem rgba(148, 163, 184, 0.0);
-  transition: all 0.2s;
   cursor: pointer;
-  padding: 0.7rem;
+  padding: 1rem;
 }
 
-.want-to-read-section__book-details > a:hover {
-  box-shadow: 0.1rem -0.1rem 0.2rem rgba(148, 163, 184, 0.3);
+.want-to-read-section__book-details:hover {
+  transform: translateY(-0.5rem);
   background-color: rgba(248, 250, 252, 0.7);
+  filter: drop-shadow(0.1rem -0.1rem 0.2rem rgba(148, 163, 184, 0.3));
 
 }
 
@@ -330,6 +343,7 @@
   width: 8rem;
   height: 12rem;
   border-radius: 0.5rem;
+  align-self: center;
 }
 
 .want-to-read-section__book-title {
@@ -351,4 +365,32 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.public-domain {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  cursor: help;
+  text-decoration: none;
+  font-size: 1.2rem; 
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-small);
+  border-top: none;
+  border-bottom: none;
+  border-left: 0.3rem solid var(--clr-blue-gray-500);
+  border-right: none;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--clr-blue-gray-100); 
+  padding: 1rem;
+}
+
+.legend > abbr {
+  text-decoration: none;
 }
