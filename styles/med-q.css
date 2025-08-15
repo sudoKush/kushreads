@@ -3,6 +3,10 @@
     overflow-x: hidden;
   }
 
+  html {
+    scroll-padding-top: 10rem;
+  }
+
   body {
     padding-top: 9rem;
   }
