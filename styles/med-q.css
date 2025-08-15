@@ -70,7 +70,7 @@
 
   .currently-reading-section {
     padding: 0;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .currently-reading-section__books-container {
@@ -122,6 +122,7 @@
   .currently-reading-section__book-quotes {
     padding: 0.4rem;
     gap: 1rem;
+    margin-bottom: 3rem;
   }
 
   .quote-1-container, .quote-2-container, .quote-3-container, .quote-4-container {
