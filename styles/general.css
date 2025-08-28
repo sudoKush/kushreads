@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 :root {
-  /* colors */
   --clr-black: #000000;
   --clr-white: #FFFFFF;
   --clr-rose-300: #FDA4AF;
@@ -29,37 +28,33 @@
   --clr-blue-600: #2563EB;
   --clr-emerald-500: #10B981;
 
-  /* fonts */
-  --font-family-poppins: 'poppins';
-  --font-family-lora: 'lora';
-  --font-family-roboto-condensed: 'roboto condensed';
-  --font-family-abril-fatface: 'abril fatface';
-  --font-family-poiret-one: 'poiret one';
+  --ff-poppins: 'poppins', serif;
+  --ff-lora: 'lora', serif;
+  --ff-roboto-condensed: 'roboto condensed', serif;
+  --ff-abril-fatface: 'abril fatface', serif;
+  --ff-poiret-one: 'poiret one', serif;
 
-  /* font sizes */
-  --font-size-extra-extra-extra-small: 0.4rem;
-  --font-size-extra-extra-small: 0.6rem;
-  --font-size-extra-small: 0.8rem;
-  --font-size-small: 1rem;
-  --font-size-medium: 1.2rem;
-  --font-size-extra-medium: 1.5rem;
-  --font-size-large: 1.8rem;
-  --font-size-extra-large: 2.1rem;
-  --font-size-extra-extra-large: 2.5rem;
-  --font-size-extra-extra-extra-large: 3.5rem;
+  --fs-3xsm: 0.4rem;
+  --fs-2xsm: 0.6rem;
+  --fs-xsm: 0.8rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.2rem;
+  --fs-xmd: 1.5rem;
+  --fs-lg: 1.8rem;
+  --fs-xlg: 2.1rem;
+  --fs-2xlg: 2.5rem;
+  --fs-3xlg: 3.5rem;
 
-  /* font weights */ 
-  --font-weight-thin: 100;
-  --font-weight-extra-light: 200;
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semi-bold: 600;
-  --font-weight-bold: 800;
-  --font-weight-extra-bold: 800;
+  --fw-thin: 100;
+  --fw-xlight: 200;
+  --fw-light: 300;
+  --fw-md: 500;
+  --fw-sb: 600;
+  --fw-bold: 700;
+  --fw-xbold: 800;
 
-  /* font styles */ 
-  --font-style-italic: italic;
+  --fs-italic: italic;
+  --fs-normal: normal;
 }
 
 * {
@@ -70,9 +65,12 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 15rem;
+  scroll-padding-top: 7rem;
+
   height: 100%;
 }
+
+body {  padding-top: 7rem; }
 
 hr {
   margin: 0;
@@ -83,4 +81,3 @@ hr {
   color: var(--clr-black);
   background-color: var(--clr-blue-gray-200);
 }
-
