@@ -1,5 +1,4 @@
-@media (min-width: 420px) and (max-width: 599px) {
-
+@media (min-width: 420px) {
   html { scroll-padding-top: 8rem; }
   body { padding-top: 8rem; }
 
@@ -8,6 +7,10 @@
     padding: 0.8rem;
     img { width: 7rem; }
   }
+  .book-card__title { font-size: var(--fs-sm); }
+  .book-card__author,
+  .book-card__rating { font-size: var(--fs-xsm); }
+
   .wide { width: 20rem; }
 
   .header__inner { padding: 0.8rem; }
@@ -25,12 +28,11 @@
   .section__title { font-size: var(--fs-xmd); } 
 
   .currently-reading__book-image { width: 10rem; }
-  .currently-reading__book-rating { font-size: var(--fs-xsm); }
   .currently-reading__book-title { font-size: var(--fs-md); }
   .currently-reading__book-author { font-size: var(--fs-xsm); }
   .currently-reading__book-review { max-width: 23rem; }
   .currently-reading__book-oneline-review { font-size: var(--fs-base); }
-  .currently-reading__book-review-paragraph { font-size: var(--fs-sm); }
+  .currently-reading__book-paragraph-review { font-size: var(--fs-sm); }
   .currently-reading__book-spoilers { font-size: var(--fs-sm); }
   .currently-reading__book-quotes { font-size: var(--fs-sm); }
 
@@ -49,33 +51,122 @@
     width: 0.8rem;
   }
 
-  .book-card__title { font-size: var(--fs-sm); }
-
-  .book-card__author,
-  .book-card__rating { font-size: var(--fs-xsm); }
-
-  .favourite__book-review-paragraph { font-size: var(--fs-xsm); }
+  .favourite__book-paragraph-review { font-size: var(--fs-xsm); }
 
   .legend { font-size: var(--fs-xsm); }
-  .public-domain { font-size: var(--fs-2xmd); }
+  .public-domain { font-size: var(--fs-xmd); }
 
   .footer__link-icon { width: 1.3rem; }
-  .footer__link-icon:hover { width: 1.2rem; }
   .footer__link-icon:active { 
     width: 1.1rem;
     box-shadow: none;
   }
 }
 
-@media (min-width: 600px) and (max-width: 767px) { }
+@media (min-width: 628px) { 
+  html { scroll-padding-top: 9rem; }
+  body { padding-top: 9rem; }
 
-@media (min-width: 768px) and (max-width: 991px) { }
+  .container { flex-flow: row wrap; }
+  .section { flex-direction: column; }
+  .header__title { font-size: var(--fs-lg); }
+  .header__logo { display: block; }
+  
+  .currently-reading__book-image { width: 12rem; }
+  }
 
-@media (min-width: 992px) and (max-width: 1199px) { }
+@media (min-width: 784px) and (min-height: 980px) { 
+  body { padding-top: 0rem; }
 
-@media (min-width: 1200px) and (max-width: 1439px) { }
+  .currently-reading { height: 100svh; } 
+}
 
-@media (min-width: 1440px) and (max-width: 1919px) { }
+@media (min-width: 1024px) { 
+  .container { gap: 2rem;  }
 
-@media (min-width: 1920px) { }
+  .book-card { 
+    width: 12rem;
+    padding: 0.8rem;
+    img { width: 10rem; }
+  }
 
+  .wide { width: 28rem; }
+
+  .header__title { font-size: var(--fs-2xlg); }
+  .header__logo { width: 5rem; }
+  .nav { height: 3rem; }
+  .nav__link { 
+    width: 6rem;
+    font-size: var(--fs-sm);
+  }
+
+  .section__title { font-size: var(--fs-lg); }
+
+  .currently-reading__book-image { width: 13rem; }
+  .currently-reading__book-title { font-size: var(--fs-2xmd); }
+  .currently-reading__book-author { font-size: var(--fs-sm); )}
+  .currently-reading__book-review { max-width: 28rem; }
+  .currently-reading__book-oneline-review { font-size: var(--fs-xmd); }
+  .currently-reading__book-paragraph-review { font-size: var(--fs-base); }
+  .currently-reading__book-spoilers { font-size: var(--fs-base); }
+  .currently-reading__book-quotes { font-size: var(--fs-base); }
+  .quote.container {
+    max-width: 18rem;
+    height: 14rem;
+  }
+  .quote-mark { width: 1rem; }
+
+  .book-card__title { font-size: var(--fs-md); }
+  .book-card__author,
+  .book-card__rating { font-size: var(--fs-base); }
+
+  .favourite__book-info { max-width: 15rem; }
+  .favourite__book-paragraph-review { 
+    font-size: var(--fs-base);
+    text-align: left;
+  }
+
+  .legend { font-size: var(--fs-sm); }
+  .public-domain { font-size: var(--fs-2xmd); }
+
+  .footer__link-title { font-size: var(--fs-xsm); }
+  .footer__link-icon { width: 1.6rem; }
+  .footer__link-icon:active { 
+    width: 1.3rem;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 1920px) and (min-height: 1000px) { 
+  html { scroll-padding-top: 13rem; }
+  body { padding-top: 4rem; }
+
+  .header__title { font-size: var(--fs-3xlg); }
+  .header__logo { width: 6rem; }
+  .nav { height: 4rem; }
+  .nav__link { 
+    width: 8rem;
+    font-size: var(--fs-base);
+  }
+
+  .section__title { font-size: var(--fs-xlg); }
+
+  .currently-reading__book-image { width: 14rem; }
+  .currently-reading__book-title { font-size: var(--fs-lg); }
+  .currently-reading__book-author { font-size: var(--fs-base); )}
+  .currently-reading__book-review { max-width: 30rem; }
+  .currently-reading__book-oneline-review { font-size: var(--fs-lg); }
+  .currently-reading__book-paragraph-review { font-size: var(--fs-md); }
+  .currently-reading__book-spoilers { font-size: var(--fs-md); }
+  .currently-reading__book-quotes { font-size: var(--fs-md); }
+
+  .legend { font-size: var(--fs-base); }
+  .public-domain { font-size: var(--fs-lg); }
+
+  .footer__link-title { font-size: var(--fs-sm); }
+  .footer__link-icon { width: 1.8rem; }
+  .footer__link-icon:active { 
+    width: 1.4rem;
+    box-shadow: none;
+  }
+}
