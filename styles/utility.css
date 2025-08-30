@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 6rem;
+  width: 7rem;
 
   border: 0.1rem solid var(--clr-blue-gray-300);
 
@@ -40,7 +40,7 @@
   z-index: 97;
 
   img {
-    width: 5rem;
+    width: 6rem;
     box-shadow: 0rem 0.2rem 0.3rem rgba(148, 163, 184, 0.2);
     transition: all 0.3s;
   }
