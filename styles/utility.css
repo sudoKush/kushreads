@@ -96,7 +96,7 @@
 
 .thin-divider {
   width: 100%;
-  height: 0.8px;
+  height: 1px;
 
   border: none;
   background-color: var(--clr-blue-gray-500);
