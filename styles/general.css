@@ -38,8 +38,10 @@
   --fs-2xsm: 0.6rem;
   --fs-xsm: 0.8rem;
   --fs-sm: 1rem;
+  --fs-base: 1.1rem;
   --fs-md: 1.2rem;
-  --fs-xmd: 1.5rem;
+  --fs-xmd: 1.3rem;
+  --fs-2xmd: 1.6rem;
   --fs-lg: 1.8rem;
   --fs-xlg: 2.1rem;
   --fs-2xlg: 2.5rem;
