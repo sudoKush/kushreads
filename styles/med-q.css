@@ -120,11 +120,14 @@
   .book-card__author,
   .book-card__rating { font-size: var(--fs-base); }
 
+  .favourite__books.container { max-width: 59rem; }
   .favourite__book-info { max-width: 15rem; }
   .favourite__book-paragraph-review { 
     font-size: var(--fs-base);
     text-align: left;
   }
+
+  .want-to-read__books.container { max-width: 99rem; }
 
   .legend { font-size: var(--fs-sm); }
   .public-domain { font-size: var(--fs-2xmd); }
