@@ -28,5 +28,7 @@
   box-shadow: 0rem 0.1rem 0.3rem rgba(148, 163, 184, 0.8);
 }
 
-
-
+.footer__link-icon:active { 
+  width: 0.9rem;
+  box-shadow: none;
+}
