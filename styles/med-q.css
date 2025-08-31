@@ -118,7 +118,7 @@
 
   .book-card__title { font-size: var(--fs-md); }
   .book-card__author,
-  .book-card__rating { font-size: var(--fs-base); }
+  .book-card__rating { font-size: var(--fs-sm); }
 
   .favourite__books.container { max-width: 59rem; }
   .favourite__book-info { max-width: 15rem; }
