@@ -78,6 +78,8 @@
   font-family: var(--ff-poppins);
   font-size: var(--fs-2xsm);
   font-weight: var(--fw-light);
+
+  white-space: nowrap;
 }
 
 .book-card__author {
