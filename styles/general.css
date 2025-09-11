@@ -94,6 +94,6 @@ hr {
 }
 
 ::selection {
-  color: var(--clr-chocolate-800);
+  color: var(--clr-black);
   background-color: var(--clr-bg-normal);
 }
