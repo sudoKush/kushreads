@@ -1,5 +1,4 @@
 .background-image { 
-	max-width: 90rem;
 	position: absolute;
 	top: 150px;
 	right: 0;
@@ -9,15 +8,13 @@
   -webkit-mask-position: center;
   -webkit-mask-size: cover;
 
-  mask-image: linear-gradient(to left, transparent, black 50%, black 30%, transparent);
+  mask-image: linear-gradient(to left, transparent, black 50%, transparent);
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: cover;
 
-  mask-image: linear-gradient(to bottom, transparent, black 50%, black 30%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 50%, transparent);
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: cover;
 }
 
 .section { margin-bottom: 5rem; }
