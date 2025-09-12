@@ -67,11 +67,11 @@
   white-space: nowrap;
   color: var(--clr-chocolate-700);
   text-decoration: none;
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.0);
   transition: all 0.2s;
 }
 .nav__link:hover {
   font-weight: var(--fw-reg);
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
-  background-color: var(--clr-bg-normal);
+  border-bottom: 0.1rem solid var(--clr-chocolate-800);
+  color: var(--clr-white);
+  background-color: var(--clr-chocolate-500);
 }
