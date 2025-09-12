@@ -97,14 +97,14 @@
 
   font-style: var(--fs-italic);
 
-  color: var(--clr-chocolate-700);
-  background-color: var(--clr-bg-normal);
+  color: var(--clr-white);
+  background-color: var(--clr-chocolate-500);
 
-  border: 0.3rem solid var(--clr-chocolate-800);
-  border-top-right-radius: 3rem;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 3rem;
-  border-bottom-right-radius: 0.5rem;
+  border: 0.2rem solid var(--clr-chocolate-800);
+  border-top-right-radius: 0.2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 2rem;
 
   padding: 2rem 2rem;
 } 
@@ -114,11 +114,9 @@
   top: 1.5rem;
   left: 1.5rem;
   z-index: 1;
-	mix-blend-mode: multiply;
-
   width: 0.6rem;
-
   pointer-events: none;
+	filter: invert(1);
 }
 
 .favourite__book-info {
