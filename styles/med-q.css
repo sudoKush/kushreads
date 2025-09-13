@@ -1,175 +1,191 @@
 @media (min-width: 420px) {
-  html { scroll-padding-top: 8rem; }
-  body { padding-top: 8rem; }
+	html { scroll-padding-top: 8rem; }
+	body { padding-top: 8rem; }
 
-  .book-card { 
-    width: 8rem;
-    padding: 0.8rem;
-    img { width: 7rem; }
-  }
-  .book-card__title { font-size: var(--fs-sm); }
-  .book-card__author,
-  .book-card__rating { font-size: var(--fs-xsm); }
+	.book-card { 
+		width: 8rem;
+		padding: 0.8rem;
+		img { width: 7rem; }
+	}
+	.book-card__title { font-size: var(--fs-sm); }
+	.book-card__author,
+	.book-card__rating { font-size: var(--fs-xsm); }
 
-  .wide { width: 20rem; }
+	.wide { width: 20rem; }
 
-  .header__inner { padding: 0.8rem; }
-  .header__title { font-size: var(--fs-2xmd); }
-  .nav { height: 2.5rem; }
-  .nav__link {
-    font-size: var(--fs-xsm);
+	.header__inner { padding: 0.8rem; }
+	.header__title { font-size: var(--fs-2xmd); }
+	.nav { height: 2.5rem; }
+	.nav__link {
+		font-size: var(--fs-xsm);
 
-    width: 5rem;
+		width: 5rem;
 
-    border-bottom: 0.18rem solid rgba(0, 0, 0, 0.0);
-  }
-  .nav__link:hover { border-bottom: 0.18rem solid rgba(0, 0, 0, 0.5); }
+		border-bottom: 0.18rem solid rgba(0, 0, 0, 0.0);
+	}
+	.nav__link:hover { border-bottom: 0.18rem solid rgba(0, 0, 0, 0.5); }
 
-  .section__title { font-size: var(--fs-xmd); } 
+	.section__title { font-size: var(--fs-xmd); } 
 
-  .currently-reading__book-image { width: 10rem; }
-  .currently-reading__book-title { font-size: var(--fs-md); }
-  .currently-reading__book-author { font-size: var(--fs-xsm); }
-  .currently-reading__book-review { max-width: 23rem; }
-  .currently-reading__book-oneline-review { font-size: var(--fs-base); }
-  .currently-reading__book-paragraph-review { font-size: var(--fs-sm); }
-  .currently-reading__book-spoilers { font-size: var(--fs-sm); }
-  .currently-reading__book-quotes { font-size: var(--fs-sm); }
+	.currently-reading__book-image { width: 10rem; }
+	.currently-reading__book-title { font-size: var(--fs-md); }
+	.currently-reading__book-author { font-size: var(--fs-xsm); }
+	.currently-reading__book-review { max-width: 23rem; }
+	.currently-reading__book-oneline-review { font-size: var(--fs-base); }
+	.currently-reading__book-paragraph-review { font-size: var(--fs-sm); }
+	.currently-reading__book-spoilers { font-size: var(--fs-sm); }
+	.currently-reading__book-quotes { font-size: var(--fs-sm); }
 
-  .quote.container {
-    max-width: 15rem;
-    width: auto;
-    height: 12rem;
+	.quote.container {
+		max-width: 15rem;
+		width: auto;
+		height: 12rem;
 
-    padding: 2rem 2rem;
-  } 
+		padding: 2rem 2rem;
+	} 
 
-  .quote-mark {
-    top: 1.0rem;
-    left: 1.0rem;
+	.quote-mark {
+		top: 1.0rem;
+		left: 1.0rem;
 
-    width: 0.8rem;
-  }
+		width: 0.8rem;
+	}
 
-  .favourite__book-paragraph-review { font-size: var(--fs-xsm); }
+	.favourite__book-paragraph-review { font-size: var(--fs-xsm); }
 
-  .legend { font-size: var(--fs-xsm); }
-  .public-domain { font-size: var(--fs-xmd); }
+	.legend { font-size: var(--fs-xsm); }
+	.public-domain { font-size: var(--fs-xmd); }
 
-  .footer__link-icon { width: 1.3rem; }
-  .footer__link-icon:active { 
-    width: 1.1rem;
-    box-shadow: none;
-  }
+	.footer__link-icon { width: 1.3rem; }
+	.footer__link-icon:active { 
+		width: 1.1rem;
+		box-shadow: none;
+	}
 }
 
 @media (min-width: 628px) { 
-  html { scroll-padding-top: 9rem; }
-  body { padding-top: 9rem; }
+	html { scroll-padding-top: 9rem; }
+	body { padding-top: 9rem; }
 
-  .container { flex-flow: row wrap; }
-  .section { flex-direction: column; }
-  .header__title { font-size: var(--fs-lg); }
-  .header__logo { display: block; }
-  
-  .currently-reading__book-image { width: 12rem; }
-  }
+	.container { flex-flow: row wrap; }
+	.section { flex-direction: column; }
+	.header__title { font-size: var(--fs-lg); }
+	.header__logo { display: block; }
 
-@media (min-width: 784px) and (min-height: 980px) { 
-  body { padding-top: 0rem; }
-
-  .currently-reading { height: 100svh; } 
+	.currently-reading__book-image { width: 12rem; }
 }
 
+@media (min-width: 784px) and (min-height: 980px) { 
+	body { padding-top: 0rem; }
+
+	.currently-reading { height: 100svh; } 
+
+}
+
+@media (max-width: 1024px) {
+	.background-image { 
+		transform: scaleX(-1) translateY(-3.5rem) translateX(3.5rem) rotate(6deg);
+		width: 5rem;
+	}
+}
+
+@media (max-width: 628px) {
+	.background-image { 
+		transform: scaleX(-1) translateY(-2.9rem) translateX(-3.9rem) rotate(6deg);
+		width: 4rem;
+	}
+}
+
+
 @media (min-width: 1024px) { 
-  .container { gap: 2rem;  }
+	.container { gap: 2rem;  }
 
-  .book-card { 
-    width: 12rem;
-    padding: 0.8rem;
-    img { width: 10rem; }
-  }
+	.book-card { 
+		width: 12rem;
+		padding: 0.8rem;
+		img { width: 10rem; }
+	}
 
-  .wide { width: 28rem; }
+	.wide { width: 28rem; }
 
-  .header__title { font-size: var(--fs-2xlg); }
-  .header__logo { width: 5rem; }
-  .nav { height: 3rem; }
-  .nav__link { 
-    width: 6rem;
-    font-size: var(--fs-sm);
-  }
+	.header__title { font-size: var(--fs-2xlg); }
+	.header__logo { width: 5rem; }
+	.nav { height: 3rem; }
+	.nav__link { 
+		width: 6rem;
+		font-size: var(--fs-sm);
+	}
 
-  .section__title { font-size: var(--fs-lg); }
+	.section__title { font-size: var(--fs-lg); }
 
-  .currently-reading__book-image { width: 13rem; }
-  .currently-reading__book-title { font-size: var(--fs-2xmd); }
-  .currently-reading__book-author { font-size: var(--fs-sm); )}
-  .currently-reading__book-review { max-width: 28rem; }
-  .currently-reading__book-oneline-review { font-size: var(--fs-xmd); }
-  .currently-reading__book-paragraph-review { font-size: var(--fs-base); }
-  .currently-reading__book-spoilers { font-size: var(--fs-base); }
-  .currently-reading__book-quotes { font-size: var(--fs-base); }
-  .quote.container {
-    max-width: 18rem;
-    height: 14rem;
-  }
-  .quote-mark { width: 1rem; }
+	.currently-reading__book-image { width: 13rem; }
+	.currently-reading__book-title { font-size: var(--fs-2xmd); }
+	.currently-reading__book-author { font-size: var(--fs-sm); )}
+	.currently-reading__book-review { max-width: 28rem; }
+	.currently-reading__book-oneline-review { font-size: var(--fs-xmd); }
+	.currently-reading__book-paragraph-review { font-size: var(--fs-base); }
+	.currently-reading__book-spoilers { font-size: var(--fs-base); }
+	.currently-reading__book-quotes { font-size: var(--fs-base); }
+	.quote.container {
+		max-width: 18rem;
+		height: 14rem;
+	}
+	.quote-mark { width: 1rem; }
 
-  .book-card__title { font-size: var(--fs-md); }
-  .book-card__author,
-  .book-card__rating { font-size: var(--fs-sm); }
+	.book-card__title { font-size: var(--fs-md); }
+	.book-card__author,
+	.book-card__rating { font-size: var(--fs-sm); }
 
-  .favourite__books.container { max-width: 59rem; }
-  .favourite__book-info { max-width: 15rem; }
-  .favourite__book-paragraph-review { 
-    font-size: var(--fs-base);
-    text-align: left;
-  }
+	.favourite__books.container { max-width: 59rem; }
+	.favourite__book-info { max-width: 15rem; }
+	.favourite__book-paragraph-review { 
+		font-size: var(--fs-base);
+		text-align: left;
+	}
 
-  .want-to-read__books.container { max-width: 99rem; }
+	.want-to-read__books.container { max-width: 99rem; }
 
-  .legend { font-size: var(--fs-sm); }
-  .public-domain { font-size: var(--fs-2xmd); }
+	.legend { font-size: var(--fs-sm); }
+	.public-domain { font-size: var(--fs-2xmd); }
 
-  .footer__link-title { font-size: var(--fs-xsm); }
-  .footer__link-icon { width: 1.6rem; }
-  .footer__link-icon:active { 
-    width: 1.3rem;
-    box-shadow: none;
-  }
+	.footer__link-title { font-size: var(--fs-xsm); }
+	.footer__link-icon { width: 1.6rem; }
+	.footer__link-icon:active { 
+		width: 1.3rem;
+		box-shadow: none;
+	}
 }
 
 @media (min-width: 1920px) and (min-height: 1000px) { 
-  html { scroll-padding-top: 13rem; }
-  body { padding-top: 4rem; }
+	html { scroll-padding-top: 13rem; }
+	body { padding-top: 4rem; }
 
-  .header__title { font-size: var(--fs-3xlg); }
-  .header__logo { width: 6rem; }
-  .nav { height: 4rem; }
-  .nav__link { 
-    width: 8rem;
-    font-size: var(--fs-base);
-  }
+	.header__title { font-size: var(--fs-3xlg); }
+	.header__logo { width: 6rem; }
+	.nav { height: 4rem; }
+	.nav__link { 
+		width: 8rem;
+		font-size: var(--fs-base);
+	}
 
-  .section__title { font-size: var(--fs-xlg); }
+	.section__title { font-size: var(--fs-xlg); }
 
-  .currently-reading__book-image { width: 14rem; }
-  .currently-reading__book-title { font-size: var(--fs-lg); }
-  .currently-reading__book-author { font-size: var(--fs-base); )}
-  .currently-reading__book-review { max-width: 30rem; }
-  .currently-reading__book-oneline-review { font-size: var(--fs-lg); }
-  .currently-reading__book-paragraph-review { font-size: var(--fs-md); }
-  .currently-reading__book-spoilers { font-size: var(--fs-md); }
-  .currently-reading__book-quotes { font-size: var(--fs-md); }
+	.currently-reading__book-image { width: 14rem; }
+	.currently-reading__book-title { font-size: var(--fs-lg); }
+	.currently-reading__book-author { font-size: var(--fs-base); )}
+	.currently-reading__book-review { max-width: 30rem; }
+	.currently-reading__book-oneline-review { font-size: var(--fs-lg); }
+	.currently-reading__book-paragraph-review { font-size: var(--fs-md); }
+	.currently-reading__book-spoilers { font-size: var(--fs-md); }
+	.currently-reading__book-quotes { font-size: var(--fs-md); }
 
-  .legend { font-size: var(--fs-base); }
-  .public-domain { font-size: var(--fs-lg); }
+	.legend { font-size: var(--fs-base); }
+	.public-domain { font-size: var(--fs-lg); }
 
-  .footer__link-title { font-size: var(--fs-sm); }
-  .footer__link-icon { width: 1.8rem; }
-  .footer__link-icon:active { 
-    width: 1.4rem;
-    box-shadow: none;
-  }
+	.footer__link-title { font-size: var(--fs-sm); }
+	.footer__link-icon { width: 1.8rem; }
+	.footer__link-icon:active { 
+		width: 1.4rem;
+		box-shadow: none;
+	}
 }
