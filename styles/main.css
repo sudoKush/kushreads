@@ -6,6 +6,7 @@
 	transform: scaleX(-1) translateY(-7.8rem) translateX(7.3rem) rotate(6deg);
 
 	width: 10rem;
+	pointer-events: none;
 }
 
 .section { margin-bottom: 5rem; }
@@ -33,8 +34,6 @@
 
 	transition: all 0.3s;
 }
-
-.currently-reading__book-image:hover { filter: drop-shadow(0.0rem -0.0rem 0.7rem rgba(148, 163, 184, 0.3)); }
 
 .currently-reading__book-rating {
 	color: var(--clr-chocolate-700);
