@@ -84,7 +84,7 @@
 
 @media (max-width: 1024px) {
 	.background-image { 
-		transform: scaleX(-1) translateY(-3.5rem) translateX(3.5rem) rotate(6deg);
+		transform: scaleX(-1) translateY(-3.1rem) translateX(3.4rem) rotate(6deg);
 		width: 5rem;
 	}
 }
