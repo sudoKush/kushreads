@@ -94,7 +94,7 @@
 
 .currently-reading__book-quotes {
 	font-family: var(--ff-lora);
-	font-size: var(--fs-sm);
+	font-size: var(--fs-xsm);
 	font-weight: var(--fw-thin);
 
 	gap: 1rem;
@@ -103,7 +103,7 @@
 .quote.container {
 	position: relative;
 
-	max-width: 12rem;
+	max-width: 16rem;
 	width: auto;
 	height: 12rem;
 
@@ -118,7 +118,7 @@
 	border-bottom-left-radius: 0.2rem;
 	border-bottom-right-radius: 2rem;
 
-	padding: 2rem 2rem;
+	padding: 2.5rem 2.5rem;
 } 
 
 .quote-mark {
