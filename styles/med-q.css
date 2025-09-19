@@ -35,15 +35,10 @@
 	.currently-reading__book-paragraph-review { font-size: var(--fs-sm); }
 	.currently-reading__book-spoilers { font-size: var(--fs-sm); }
 	.currently-reading__book-quotes { font-size: var(--fs-sm); }
-
 	.quote.container {
-		max-width: 15rem;
-		width: auto;
-		height: 12rem;
-
-		padding: 2rem 2rem;
+		max-width: 20rem;
+		height: 13rem;
 	} 
-
 	.quote-mark {
 		top: 1.0rem;
 		left: 1.0rem;
@@ -126,10 +121,7 @@
 	.currently-reading__book-paragraph-review { font-size: var(--fs-base); }
 	.currently-reading__book-spoilers { font-size: var(--fs-base); }
 	.currently-reading__book-quotes { font-size: var(--fs-base); }
-	.quote.container {
-		max-width: 18rem;
-		height: 14rem;
-	}
+	.quote.container { height: 15rem; }
 	.quote-mark { width: 1rem; }
 
 	.book-card__title { font-size: var(--fs-md); }
